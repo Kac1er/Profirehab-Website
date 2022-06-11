@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+	rel="icon"
+	type="image/png"
+	sizes="32x32"
+	href="../dist/assets/icons/favicon-32x32.webp"
+/>
+<link
+	rel="icon"
+	type="image/png"
+	sizes="16x16"
+	href="../dist/assets/icons/favicon-16x16.webp"
+/>
+<link
+	rel="stylesheet"
+	href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+/>
+<link rel="apple-touch-icon" href="../dist/assets/icons/apple-touch-icon.webp" />
+<link rel="apple-touch-icon" sizes="57x57" href="../dist/assets/icons/apple-touch-icon-57x57.webp" />
+<link rel="apple-touch-icon" sizes="72x72" href="../dist/assets/icons/apple-touch-icon-72x72.webp" />
+<link rel="apple-touch-icon" sizes="76x76" href="../dist/assets/icons/apple-touch-icon-76x76.webp" />
+<link
+	rel="apple-touch-icon"
+	sizes="114x114"
+	href="../dist/assets/icons/apple-touch-icon-114x114.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="120x120"
+	href="../dist/assets/icons/apple-touch-icon-120x120.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="144x144"
+	href="../dist/assets/icons/apple-touch-icon-144x144.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="152x152"
+	href="../dist/assets/icons/apple-touch-icon-152x152.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="180x180"
+	href="../dist/assets/icons/apple-touch-icon-180x180.webp"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap"
+	rel="stylesheet"
+/>
+
+	<meta
+		name="description"
+		content="Gabinet Profirehab oferuje szereg specajlistycznych zabiegów mających na celu radzenie sobie ze skutkami siedzącego trybu życia i nie tylko."
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="../dist/assets/icons/favicon-32x32.webp"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="../dist/assets/icons/favicon-16x16.webp"
+	/>
+	<title>Profirehab | Nowoczesne zabiegi</title>
+	<link rel="stylesheet" href="../dist/css/pages/treatments.min.css" />
+</head>
+<html lang="pl">
+	<body>
+		<a
+			href="#main-content"
+			class="skip-link"
+			aria-label="Przejdź do sekcji głównej pomijając nawigację"
+			>Sekcja główna</a
+		>
+		<nav class="nav">
+	<div class="nav__contanct-list">
+		<div class="wrapp">
+			<a href="tel:881064340" class="contact-link">
+				<img
+					src="https://profirehab-cdn.netlify.app/assets/icons/phone-icon-nav.svg"
+					alt="Ikona telefonu, kontakt telefoniczny z gabinetem profirehab"
+					class="icon-contact"
+				/>
+				881 064 340</a
+			>
+			<a href="mailto:biuro.profirehab@gmail.com" class="contact-link">
+				<img
+					src="https://profirehab-cdn.netlify.app/assets/icons/mail-icon-nav.svg"
+					alt="Ikona maila, kontakt mailowy z biurem profirehab"
+					class="icon-contact"
+				/>
+				biuro.profirehab@gmail.com</a
+			>
+		</div>
+	</div>
+	<div class="nav__components">
+		<div class="wrapp">
+			<div class="ham-btn-box">
+				<button
+					aria-haspopup="true"
+					aria-label="otwórz menu"
+					class="ham-btn"
+					data-aos="zoom-in"
+					data-aos-delay="500"
+				>
+					<img src="https://profirehab-cdn.netlify.app/assets/icons/menu.svg" class="icon" alt="" />
+					<span class="btn-name">menu</span>
+				</button>
+			</div>
+			<a
+				href="index.html"
+				class="logo-link"
+				data-aos="zoom-in"
+				data-aos-delay="200"
+				><img
+					src="https://profirehab-cdn.netlify.app/assets/icons/logo_color.webp"
+					class="logo"
+					alt="logo firmy Profirehab"
+			/></a>
+			<div
+				class="nav-social-media"
+				data-aos="zoom-in"
+				data-aos-delay="500"
+				data-aos-easing="ease-in-out"
+			>
+				<a
+					aria-label="Fanpage gabinetu Profirehab na instagramie"
+					href="https://www.instagram.com/profirehab/"
+					rel="noopener"
+					class="social-media-item"
+					target="_blank"
+					><img src="https://profirehab-cdn.netlify.app/assets/icons/instagram.svg" alt="" class="icon"
+				/></a>
+				<a
+					href="https://www.facebook.com/profirehab/"
+					rel="noopener"
+					aria-label="Fanpage gabinetu Profirehab na facebooku"
+					class="social-media-item"
+					target="_blank"
+					><img src="https://profirehab-cdn.netlify.app/assets/icons/facebook.svg" alt="" class="icon"
+				/></a>
+				<a
+					href="https://www.youtube.com/channel/UCY6KrQ-mW2kccU6r7XnCaXg"
+					rel="noopener"
+					aria-label="Kanał youtube gabinetu Profirehab"
+					class="social-media-item"
+					target="_blank"
+					><img src="https://profirehab-cdn.netlify.app/assets/icons/youtube.svg" alt="" class="icon"
+				/></a>
+			</div>
+		</div>
+	</div>
+	<div class="nav__menu">
+		<div class="box">
+			<p class="company-name"><span class="color-text">PROFI</span>REHAB</p>
+			<button aria-expanded="true" aria-label="zamknij menu" class="close-btn">
+				<img src="./dist/assets/icons/close.svg" class="icon" alt="" />
+			</button>
+		</div>
+		<a href="../index.html" class="menu-item menu-item-first">Strona główna </a>
+		<a href="../osteopathy.html" class="menu-item">Osteopatia</a>
+		<a href="../motoric-training.html" class="menu-item"
+			>Trening motoryczny/medyczny
+		</a>
+		<a href="../treatments.html" class="menu-item">Zabiegi</a>
+		<a href="../trainings.html" class="menu-item">Szkolenia profirehab academy</a>
+		<a href="../treatments.html" class="menu-item">Oferta</a>
+		<a href="../gallery.html" class="menu-item">Galeria</a>
+		<a href="../appointment.html" class="menu-item special-link"
+			>Pierwsza wizyta
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="white"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-arrow-right arrow"
+			>
+				<line x1="5" y1="12" x2="19" y2="12"></line>
+				<polyline points="12 5 19 12 12 19"></polyline>
+			</svg>
+		</a>
+	</div>
+	<div class="nav__shadow"></div>
+</nav>
+
+
+		<header
+			class="header"
+			style="
+				--bg-image-mobile: url('../../../dist/assets/images/treatments/header-mobile.webp');
+				--bg-image-desktop: url('../../../dist/assets/images/treatments/header-desktop.webp');
+			"
+		>
+			<h1 class="header__heading">
+				Nowoczesne <span class="special-word">zabiegi</span>
+			</h1>
+
+			<a
+				href="#main-content"
+				class="header__skip-arrow"
+				type="button"
+				aria-label="Przewiń niżej"
+			>
+				<img src="../dist/assets/icons/arrow-down.svg" alt="" />
+			</a>
+			<div class="wave-destop">
+				<div class="custom-shape-divider-bottom-1640620444">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none"
+					>
+						<path
+							d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+							opacity=".25"
+							class="shape-fill"
+						></path>
+						<path
+							d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+							opacity=".5"
+							class="shape-fill"
+						></path>
+						<path
+							d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+							class="shape-fill"
+						></path>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<main class="main" id="main-content">
+			<div class="wrapp">
+				<h3 class="main__title">Zabiegi</h3>
+				<p class="main__text">
+					Duża część naszej pracy to radzenie sobie ze skutkami siedzącego trybu
+					życia, oraz chorobami cywilizacyjnymi.
+					<span class="bolder"
+						>Pamiętaj, że najlepiej jest zapobiegać, a nie leczyć.</span
+					>
+					Jeżeli chcesz zapobiec dolegliwościom związanym z Twoją pracą i stylem
+					życia — zadbaj o regularne wizyty u Fizjoterapeuty, który pomoże Ci
+					wzmocnić swoje ciało i zminimalizować skutki nieprawidłowych nawyków
+					ruchowych.
+				</p>
+				<p class="main__text">
+					W swojej pracy wykorzystujemy nowoczesne metody fizjoterapii, takie
+					jak:
+				</p>
+				<ul class="main__list">
+					<li class="treatment__list-item">Igłoterapia/suche igłowanie</li>
+					<li class="treatment__list-item">
+						Manipulacje stawów (“kręgarstwo”)
+					</li>
+					<li class="treatment__list-item">Terapia tkanek miękkich IASTM</li>
+					<li class="treatment__list-item">Klawiterapia</li>
+					<li class="treatment__list-item">Terapia wisceralna</li>
+					<li class="treatment__list-item">Akupunktura</li>
+					<li class="treatment__list-item">Flossing</li>
+				</ul>
+				<img
+					src="../dist/assets/images/training/tynk-1.webp"
+					alt=""
+					class="blob"
+				/>
+			</div>
+			<section class="treatments">
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/igłoterapia4.webp"
+								alt="Zdjęcie przedstawia przebieg igłoterapi. Fizjoterapeuta ubrany w niebieskie rękawiczki ochronne wbija igły w ciało pacjenta. "
+								class="treatment__img treatment__img--first"
+							/>
+							<img
+								src="../dist/assets/images/treatments/igłoterapia5.webp"
+								alt="Zdjęcie przedstawia efekt końcowy igłoterapi. Na zdjęciu widać wbite igły w ramię pacjenta"
+								class="treatment__img treatment__img--second img-fix-1"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">Igłoterapia/suche igłowanie</h3>
+								<p class="treatment__text">
+									Igłoterapią zajmują się odpowiednio wykształceni
+									fizjoterapeuci, którzy zapewniają Pacjentom komfort podczas
+									zabiegu, oraz w profesjonalny sposób diagnozują schorzenie i
+									dobierają odpowiednią metodę leczenia.
+								</p>
+								<p class="treatment__text">
+									<span class="bolder">Należy pamiętać</span>, że igłotetapia,
+									nazywana również suchym igłowaniem nie powoduje uszkodzenia
+									tkanek i krowotoków, a samo nakłucie wykonywane super cienkimi
+									igłami i nie koniecznie jest bolesne.
+								</p>
+								<ul class="treatment__list">
+									<span class="bolder">Wskazania do zabiegu: </span>
+									<li class="treatment__list-item">
+										ostre i przewlekłe dolegliwości bólowe kręgosłupa (rwa
+										kulszowa, kręcz szyi, dyskopatia)
+									</li>
+									<li class="treatment__list-item">
+										przewlekłe stany przeciążeniowe (zapalenie ścięgna
+										podeszwowego, ścięgna Achillesa, łokieć tenisisty, kolano
+										biegacza)
+									</li>
+									<li class="treatment__list-item">problematyczne blizny</li>
+									<li class="treatment__list-item">
+										wzmożone napięcie mięśniowe
+									</li>
+									<li class="treatment__list-item">
+										urazy sportowe (skręcenia, zwichnięcia, stłuczenia)
+									</li>
+									<li class="treatment__list-item">
+										naderwania i naciągnięcia mięśni
+									</li>
+								</ul>
+							</div>
+							<button class="treatment__btn">
+								<span class="btn-text">Czytaj więcej</span>
+								<img
+									src="../dist/assets/icons/arrow-down-treatments.svg"
+									alt=""
+									class="icon"
+								/>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/stomat1.webp"
+								alt="Na zdjęciu widoczne jest użycie narzędzi IASTM do terapii tkanek miękich pleców pacjenta"
+								class="treatment__img treatment__img--first img-fix-2"
+							/>
+							<img
+								src="../dist/assets/images/treatments/stomat2.webp"
+								alt="Grzegorz Skorus trzymający w dłoniach narzędzia IASTM"
+								class="treatment__img treatment__img--second img-fix-3"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">
+									Stawy skroniowo żuchwowe – osteopatia i fizjoterapia
+									stomatologiczna
+								</h3>
+								<p class="treatment__text">
+									Dolegliwości bólowe stawów skroniowo-żuchwowych mogą dawać
+									różne objawy. Częste spośród nich to ból szczęki w okolicy
+									uszu podczas jedzenia lub szerokiego otwierania ust, wrażenie
+									przeskakiwania szczęki lub odgłos trzeszczenia, czy też
+									nadmierna lub ograniczona ruchomość w obrębie szczęki. Tym
+									objawom może towarzyszyć ból głowy, ucha czy szyi.
+								</p>
+
+								<ul class="treatment__list">
+									<p class="treatment__text">
+										<span class="bolder"
+											>Rehabilitacja stawów skroniowo-żuchwowych
+										</span>
+										jest również niezwykle ważna w przygotowaniu szczęki do
+										założenia aparatu ortodontycznego. Podczas wizyty w naszym
+										gabinecie oceniamy postawę ciała – w tym głowy, szyi i
+										kręgosłupa, rozluźniamy wzmożone napięcia w okolicy
+										twarzoczaszki oraz więzadeł stawów poprzez terapię manualną,
+										oraz edukujemy pacjenta jakie ćwiczenia będa wskazane w
+										danym przypadku.
+									</p>
+								</ul>
+							</div>
+
+							<button class="treatment__btn">
+								<span class="btn-text">Czytaj więcej</span>
+								<img
+									src="../dist/assets/icons/arrow-down-treatments.svg"
+									alt=""
+									class="icon"
+								/>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/Kregarstwo2.webp"
+								alt="Na zdjęciu widoczny jest pacjent poddawawny zabiegowi manipulacje stawów, a dokładniej zabiegowi poddany jest jego górny odcinek szyi "
+								class="treatment__img treatment__img--first img-fix-12"
+							/>
+							<img
+								src="../dist/assets/images/treatments/kręgarstwo.webp"
+								alt="Grzegorz Skorus ubrany w czarną koszule przeprowadza zabieg manipulacji górnego odcinka szyjnego pacjenta"
+								class="treatment__img treatment__img--second img-fix-5"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">
+									Manipulacje stawów (“kręgarstwo”)
+								</h3>
+								<p class="treatment__text">
+									Kręgarstwo to bezbolesna terapia polegająca na przywróceniu
+									ułożenia oraz funkcji w zablokowanych segmentach kręgosłupa. W
+									terapii wykorzystuje się delikatne manipulacje i mobilizacje
+									na kręgosłupie i innych stawach
+								</p>
+								<p class="treatment__text">
+									<span class="bolder">Korzystając z zabiegów</span> terapii
+									manualnej jesteśmy w stanie usunąć dolegliwości nawet w
+									przypadku tak poważnego schorzenia jakim jest tak zwany
+									wypadnięty dysk czyli przepuklina jądra miażdżystego unikając
+									często poważnej operacji kręgosłupa.
+								</p>
+								<ul class="treatment__list">
+									<span class="bolder">Wskazania do terapii: </span>
+									<li class="treatment__list-item">dyskopatie</li>
+									<li class="treatment__list-item">rwa kulszowa</li>
+									<li class="treatment__list-item">bóle krzyża</li>
+									<li class="treatment__list-item">
+										bóle odcinka szyjnego kręgosłupa
+									</li>
+									<li class="treatment__list-item">bóle między łopatkami</li>
+									<li class="treatment__list-item">rwa barkowa</li>
+									<li class="treatment__list-item">skolioza</li>
+									<li class="treatment__list-item">
+										bóle głowy pochodzenia odkręgosłupowego
+									</li>
+									<li class="treatment__list-item">
+										szumy w uszach pochodzenia odkręgosłupowego
+									</li>
+									<li class="treatment__list-item">
+										zawroty głowy pochodzenia odkręgosłupowego
+									</li>
+									<li class="treatment__list-item">
+										bóle bioder, kolan, barków, łokci, nadgarstka.
+									</li>
+									<li class="treatment__list-item">dyskopatie</li>
+									<li class="treatment__list-item">
+										drętwienie, mrowienie stóp
+									</li>
+									<li class="treatment__list-item">
+										drętwienie, mrowienie palców rąk
+									</li>
+								</ul>
+							</div>
+
+							<button class="treatment__btn">
+								<span class="btn-text">Czytaj więcej</span>
+								<img
+									src="../dist/assets/icons/arrow-down-treatments.svg"
+									alt=""
+									class="icon"
+								/>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/klaw2.webp"
+								alt="Na zdjęciu widoczne jest użycie narzędzi IASTM do terapii tkanek miękich pleców pacjenta"
+								class="treatment__img treatment__img--first img-fix-13"
+							/>
+							<img
+								src="../dist/assets/images/treatments/klaw1.webp"
+								alt="Grzegorz Skorus trzymający w dłoniach narzędzia IASTM"
+								class="treatment__img treatment__img--second img-fix-14"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">Terapia tkanek miękkich IASTM</h3>
+								<p class="treatment__text">
+									Jedna z najnowszych technik terapii tkanek miękkich w
+									światowej medycynie. Są to techniki z wykorzystaniem narzędzi
+									IASTM (Instrument Assisted Soft Tissue Mobilization). Poprzez
+									odpowiedni bodziec na układ nerwowy, stymulując receptory
+									powięziowe daje niezwykle szybkie reakcje na układ
+									mięśniowo-powięziowy.
+								</p>
+								<p class="treatment__text">
+									<span class="bolder">Przykładowo: </span> Dzięki tej terapii
+									możemy szybko zmniejszyć wzmożone napięcie mięśniowe lub,
+									wykorzystując inny bodziec, możemy stymulować osłabione grupy
+									mięśniowe w celu aktywacji/wzmocnienia.
+								</p>
+								<ul class="treatment__list">
+									<p class="treatment__text">
+										Często również wspomaganie terapii przy zaburzeniach czucia
+										powierzchownego jak i głębokiego. W gabinecie Profirehab
+										wykorzystywane są w większości modeli terapeutycznych.
+										<span class="bolder"
+											>Jesteśmy jednym z nielicznych gabinetów w Polsce,
+										</span>
+										które nie tylko stosują technikę IASTM, ale również będąc
+										dyplomowanym instruktorem, szkolimy innych fizjoterapeutów
+										oraz lekarzy w całym kraju.
+									</p>
+								</ul>
+							</div>
+
+							<button class="treatment__btn">
+								<span class="btn-text">Czytaj więcej</span>
+								<img
+									src="../dist/assets/icons/arrow-down-treatments.svg"
+									alt=""
+									class="icon"
+								/>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/klawiterapia2.webp"
+								alt="Grzegorz Skorus przeprowadza zabieg klawiterapii w okolicach ramienia pacjenta"
+								class="treatment__img treatment__img--first img-fix-6"
+							/>
+							<img
+								src="../dist/assets/images/treatments/klawiterapia.webp"
+								alt="Zdjęcie przedstawiające zabieg Klawiterapii w odcinku ramienia pacjenta"
+								class="treatment__img treatment__img--second img-fix-7"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">Klawiterapia</h3>
+								<p class="treatment__text">
+									Polega na stymulowaniu przewodnictwa nerwowego za pomocą
+									klawików na ściśle określonych okolicach ciała. Każda z tych
+									okolic ma wpływ na określone procesy regulacyjne zachodzące w
+									organizmie człowieka, a także odpowiada za pracę konkretnego
+									organu wewnętrznego.
+								</p>
+								<p class="treatment__text">
+									<span class="bolder">Klawik</span> swoją budową przypomina
+									tradycyjny gwóźdź, ale wykonany ze stali nierdzewnej. Klawik
+									jest na tyle ostry, że można nim wywołać impuls nerwowy, ale
+									jest bezpieczny, bo nie narusza skóry.
+								</p>
+								<ul class="treatment__list">
+									<span class="bolder">Klawiterapię używamy najczęściej: </span>
+									<li class="treatment__list-item">
+										chorobach układu nerwowego (SM, Parkinson)
+									</li>
+									<li class="treatment__list-item">
+										zaburzeniami psychosomatycznymi
+									</li>
+									<li class="treatment__list-item">depresje</li>
+									<li class="treatment__list-item">
+										wspomaganie terapii wisceralnych (Detoksykacja organizmu)
+									</li>
+									<li class="treatment__list-item">
+										bóle nieokreślonego pochodzenia
+									</li>
+								</ul>
+							</div>
+
+							<button class="treatment__btn">
+								<span class="btn-text">
+									<span class="btn-text">Czytaj więcej</span>
+								</span>
+								<img
+									src="../dist/assets/icons/arrow-down-treatments.svg"
+									alt=""
+									class="icon"
+								/>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/terapiaWcierna1.webp"
+								alt="Na zdjęciu widać przebieg zabiegu wisceralnej. Fizjoterapeuta uciska dolny odcinek brzucha pacjenta"
+								class="treatment__img treatment__img--first img-fix-11"
+							/>
+							<img
+								src="../dist/assets/images/treatments/terapiaWcierna2.webp"
+								alt="Na zdjęciu widać jak Grzegorz Skorus przeprowadza zabieg wisceralny, poprzez uciskanie dolnego odcinka brzucha pacjenta "
+								class="treatment__img treatment__img--second img-fix-8"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">Terapia wisceralna</h3>
+								<p class="treatment__text">
+									Terapia ta skupia się na reakcjach pomiędzy mięśniami a
+									narządami wewnętrznymi i kręgosłupem oraz na stymulacji nerwu
+									błędnego. Polega na manulanej pracy w obrębie jamy brzusznej
+									oraz strukturami sąsiadującymi. Obecny styl życia jak brak
+									ruchu, przetworzona żywność, siedząca praca, pewne cechy
+									anatomiczne naszego ciała, blizny pooperacyjne powodują
+									zagęszczenie tkanki powięziowej, w której zawieszone są nasze
+									narządy.
+								</p>
+								<p class="treatment__text">
+									<span class="bolder">Zadaniem terapii wisceralnej</span> jest
+									przywrócenie równowagi w tych połączeniach, przepchnięcie
+									zastojów limfatycznych, uzyskanie pierwotnego kształtu i
+									miękkości oraz ślizgu obszarów powięzi i narządów
+									wewnętrznych.
+								</p>
+								<ul class="treatment__list">
+									<span class="bolder"
+										>W Profirehab używamy tej metody w celu leczenia m.
+										in.:</span
+									>
+									<li class="treatment__list-item">bóle kręgosłupa</li>
+									<li class="treatment__list-item">zrosty pooperacyjne</li>
+									<li class="treatment__list-item">blizny pooperacyjne</li>
+									<li class="treatment__list-item">bóle głowy</li>
+									<li class="treatment__list-item">bóle i drętwienia nóg</li>
+									<li class="treatment__list-item">obrzęki nóg</li>
+									<li class="treatment__list-item">bóle brzucha</li>
+									<li class="treatment__list-item">zgagi</li>
+									<li class="treatment__list-item">refluks</li>
+									<li class="treatment__list-item">kolki wątrobowe</li>
+									<li class="treatment__list-item">wzdęcia</li>
+									<li class="treatment__list-item">
+										bóle penisa, prostaty, jąder, jajnika, pochwy
+									</li>
+									<li class="treatment__list-item">
+										częste zapalenia pęcherza
+									</li>
+									<li class="treatment__list-item">bolesne miesiączki</li>
+								</ul>
+							</div>
+
+							<button class="treatment__btn">
+								<span class="btn-text">Czytaj więcej</span>
+								<img
+									src="../dist/assets/icons/arrow-down-treatments.svg"
+									alt=""
+									class="icon"
+								/>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/Akupunktura1.webp"
+								alt="Na zdjęciu widzimy fizjoterapeutę  który metalową igłą stymuluje akupunkty znajdujące się na plecach pacjenta"
+								class="treatment__img treatment__img--first img-fix-10"
+							/>
+							<img
+								src="../dist/assets/images/treatments/Akupunktura2.webp"
+								alt="Na zdjęciu widoczny jest ubrany na biało fizjoterapeuta który przygotuwuje igłe do akupunktury"
+								class="treatment__img treatment__img--second img-fix-9"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">Akupunktura</h3>
+								<p class="treatment__text">
+									Akupunktura to jedna z najstarszych metod leczniczych. Polega
+									na stymulowaniu akupunktów (miejsc na skórze lub tkance
+									podskórnej) lub pewnych części ciała przy pomocy cienkich
+									metalowych igieł.
+								</p>
+								<p class="treatment__text">
+									Zabieg ten wpływa stymulująco na różne partie ciała patologie
+									organizmu.
+								</p>
+								<ul class="treatment__list">
+									<span class="bolder"
+										>W Profirehab najczęściej wykorzystujemy w leczeniu
+										m.in.:</span
+									>
+									<li class="treatment__list-item">
+										migrenie i innych bólach głowy,
+									</li>
+									<li class="treatment__list-item">bólach mięśniowych,</li>
+									<li class="treatment__list-item">
+										dolegliwościach zwyrodnieniowych
+									</li>
+									<li class="treatment__list-item">kamicy nerkowej</li>
+									<li class="treatment__list-item">
+										dolegliwościach po zabiegach chirurgicznych
+									</li>
+									<li class="treatment__list-item">dyskopatiach</li>
+									<li class="treatment__list-item">bólach kręgosłupa</li>
+								</ul>
+							</div>
+
+							<button class="treatment__btn">
+								<span class="btn-text">Czytaj więcej</span>
+								<img
+									src="../dist/assets/icons/arrow-down-treatments.svg"
+									alt=""
+									class="icon"
+								/>
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="treatment">
+					<div class="wrapp">
+						<div class="treatment__img-box">
+							<img
+								src="../dist/assets/images/treatments/flossing.webp"
+								alt="Na zdjęciu widoczny jest proces przyklejania w okolicach kolana pacjenta taśmy floss"
+								class="treatment__img treatment__img--first"
+							/>
+							<img
+								src="../dist/assets/images/treatments/flossing2.webp"
+								alt="Na zdjęciu widoczna jest noga pacjenta po skończonym Flossingu"
+								class="treatment__img treatment__img--second img-fix-4"
+							/>
+						</div>
+						<div class="treatment__content">
+							<div class="treatment__text-box">
+								<h3 class="treatment__title">Flossing</h3>
+								<p class="treatment__text">
+									Flossing to nie tylko terapia polegająca na uciśnięciu
+									wybranych struktur by zwiększyć zakres ruchu!
+								</p>
+								<p class="treatment__text">
+									W codziennej pracy taśma Floss jest moim niezbędnym
+									narzędziem, dzięki którym mocno przyspieszamy efekty
+									terapeutyczne. Poprzez odpowiednie owinięcie struktury
+									poddanej zabiegowi, wprowadzony aktywny ruch oraz szybkie
+									odwinięcie możemy uzyskać wiele efektów terapeutycznych. A to
+									wszystko w czasie ok 2 minut.
+								</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer class="footer" id="footer">
+	<div class="wrapp">
+		<div class="about-company">
+			<div class="about-company__text-wrapp">
+				<div class="about-company__text">
+					<h3 class="section-title">O nas</h3>
+					<p class="footer-name">Profirehab</p>
+					<p class="footer-text">
+						Misją Profirehab jest odkrycie przyczyn dolegliwości oraz
+						zastosowanie indywidualnego programu leczenia, podczas którego
+						Pacjent w świadomy sposób uczestniczy w procesie terapeutycznym.
+					</p>
+				</div>
+				<div class="about-company__social-media">
+					<a
+						href="https://www.instagram.com/profirehab/"
+						rel="noopener"
+						target="_blank"
+						aria-label="Fanpage gabinetu Profirehab na instagramie"
+						class="social-media-item"
+					>
+						<img
+							src=""
+							data-src="https://profirehab-cdn.netlify.app/assets/icons/instagram.svg"
+							alt=""
+							class="icon lazy-load-image"
+						/>
+					</a>
+					<a
+						href="https://www.facebook.com/profirehab/"
+						rel="noopener"
+						target="_blank"
+						aria-label="Fanpage gabinetu Profirehab na facebooku"
+						class="social-media-item"
+					>
+						<img
+							src=""
+							data-src="https://profirehab-cdn.netlify.app/assets/icons/facebook.svg"
+							alt=""
+							class="icon lazy-load-image"
+						/>
+					</a>
+					<a
+						href="https://www.youtube.com/channel/UCY6KrQ-mW2kccU6r7XnCaXg"
+						rel="noopener"
+						target="_blank"
+						aria-label="Kanał youtube gabinetu profirehab"
+						class="social-media-item"
+					>
+						<img
+							src=""
+							data-src="https://profirehab-cdn.netlify.app/assets/icons/youtube.svg"
+							alt=""
+							class="icon lazy-load-image"
+						/>
+					</a>
+				</div>
+			</div>
+			<div class="about-company__info-wrapp">
+				<h3 class="section-title">Kontakt</h3>
+				<div class="wrapper">
+					<div class="about-company__info">
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/phone-icon-footer.svg"
+									alt="Ikona telefonu, kontakt telefoniczny z biurem profirehab"
+									class="icon lazy-load-image"
+								/>
+								Telefon
+							</p>
+							<p class="footer-text"><a href="tel:881064340">881 064 340</a></p>
+						</div>
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/mail-icon-footer.svg"
+									alt="Ikona listu, kontakt mailowy z biurem profirehab"
+									class="icon lazy-load-image"
+								/>
+								Poczta
+							</p>
+							<p class="footer-text"><a href="mailto:biuro.profirehab@gmail.com">biuro.profirehab@gmail.com</a></p>
+							<span aria-hidden="true" class="footer-text hidden">a</span>
+						</div>
+					</div>
+					<div class="about-company__info">
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/clock.svg"
+									alt="Ikona zegara, godziny otwarcia gabinetu profirehab"
+									class="icon lazy-load-image"
+								/>
+								Godziny Otwarcia
+							</p>
+							<p class="footer-text">Od poniedziałku do piątku</p>
+							<p class="footer-text">w godz. 8:00 - 20:00</p>
+						</div>
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/map-pin.svg"
+									alt="Ikona lokalizacji, adres gabinetu profirehab"
+									class="icon lazy-load-image"
+								/>
+								Adres
+							</p>
+							<p class="footer-text"><a href="https://g.page/ProfiRehab?share" rel="noopener noreferrer" target="_blank">ul. Krakowska 116</a></p>
+							<p class="footer-text"><a href="https://g.page/ProfiRehab?share" rel="noopener noreferrer" target="_blank">38-400 Krosno</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__links">
+			<h3 class="section-title">Nasze usługi</h3>
+			<div class="footer__links-wrapp">
+				<a href="../appointment.html" class="footer-link">pierwsza wizyta</a>
+				<a href="../treatments.html" class="footer-link">zabiegi</a>
+				<a href="../osteopathy.html" class="footer-link">Osteopatia</a>
+				<a href="../gallery.html" class="footer-link">Galeria</a>
+				<a href="../trainings.html" class="footer-link">szkolenia</a>
+				<a href="../motoric-training.html" class="footer-link"
+					>trening motoryczny/medyczny</a
+				>
+			</div>
+		</div>
+		<div class="copyRight">
+			<p class="copyRight__text">
+				&copy; <span class="year">2022</span> - POWERED BY ANAPO
+			</p>
+		</div>
+	</div>
+	<img
+		src=""
+		data-src="https://profirehab-cdn.netlify.app/assets/icons/footer-dots-3.svg"
+		alt=""
+		class="footer__dotted footer__dotted--first lazy-load-image"
+	/>
+	<img
+		src=""
+		data-src="https://profirehab-cdn.netlify.app/assets/icons/footer-dots-2.svg"
+		alt=""
+		class="footer__dotted footer__dotted--second lazy-load-image"
+	/>
+	<img
+		src=""
+		data-src="https://profirehab-cdn.netlify.app/assets/icons/footer-dots-1.svg"
+		alt=""
+		class="footer__dotted footer__dotted--third lazy-load-image"
+	/>
+</footer>
+
+		<script src="../dist/js/main.min.js"></script>
+		<script src="../dist/js/treatments.min.js"></script>
+	</body>
+</html>

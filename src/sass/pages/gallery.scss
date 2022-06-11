@@ -1,0 +1,84 @@
+@import "../main";
+@import "../components/innerHeader";
+@import "../components/footer";
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5em;
+	margin-top: 6em;
+	width: 95%;
+	&-item {
+        transition: transform .3s;
+		&--active {
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			width: 300px;
+			transform: translate(-50%, -50%) scale(1.05);
+            z-index: 151;
+		}
+        &:not(.gallery-item--active):hover {
+            transform: scale(1.05);
+            
+        }
+        &:not(.gallery-item--active) {
+            cursor: pointer;
+        }
+	}
+	&__shadow {
+        display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 150;
+		background-color: rgba(0, 0, 0, 0.8);
+
+        &-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: transparent;
+            border: 0;
+            transition: opacity .3s;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        &--active {
+            display: block;
+        }
+	}
+}
+
+@media (min-width: 768px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		gap: 1em;
+
+	
+
+		&-nav {
+			display: none;
+		}
+        &-item {
+            &--active {
+                width: 500px;
+            }
+        }
+	}
+}
+@media (min-width: 1200px) {
+    .gallery {
+        &-item {
+            &--active {
+                width: 700px;
+            }
+        }
+    }
+}

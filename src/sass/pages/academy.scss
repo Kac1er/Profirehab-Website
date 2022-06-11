@@ -1,0 +1,221 @@
+@import "../main";
+@import "../components/innerHeader";
+@import "../components/footer";
+
+.academy {
+	padding: 5em 0.5em;
+
+	&__text {
+		padding-top: 0.5em;
+		line-height: 1.7em;
+	}
+    &__image {
+        margin-top: 1em;
+    }
+    &__carousel {
+        &-item {
+            margin: 0 0.5em;
+
+        }
+    }
+}
+.trainings {
+    margin-top: 3em;
+    padding: 3em 0;
+    background-color: $training-section;
+
+    &__title {
+        @include sectionHeading;
+        color: #fff;
+    }
+}
+.training {
+    padding: 5em 1em;
+    color: #fff;
+    &__logo {
+        width: 250px;
+    }
+    &__content {
+        display: inline-block;
+        position: relative;
+        margin-top: 1em;
+        padding: 0.5em;
+        height: 300px;
+        overflow: auto;
+        background-color: #332F2E;
+    }
+    &__time {
+        span {
+            font-weight: 600;
+        }
+    }
+    &__button {
+        @include buttonStyles("primary");
+       display: inline-block;
+       min-width: unset;
+        margin-top: 1em;
+        padding: 1em 1.5em;
+        color: #fff;
+        border: 0;
+    }
+    &__image {
+        margin-top: 1em;
+        width: 100%;
+    }
+    &__text:not(:first-child) {
+        margin-top: 1em;
+    }
+    &__list {
+        &-item {
+            margin-top: 1em;
+        }
+    }
+}
+
+.calendar {
+    padding: 5em 1em;
+    &__title {
+        @include sectionHeading;
+    }
+    &__category {
+        display: grid;
+        gap: 1em;
+        margin-top: 3em;
+        &-heading {
+            position: relative;
+            padding-left: 1.8em;
+            font-size: 3.2rem;
+            font-weight: 600;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 50px;
+                height: 3px;
+                background-color: $primary-color;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__item {
+        padding: 2em 1em;
+        background-color: rgb(15, 15, 15);
+        border-radius: 3px;
+
+        &-image {
+            margin-bottom: 2em;
+            margin-inline: auto;
+            width: 250px;
+
+            &--smaller {
+                width: 100px;
+            }
+        }
+        &-info, &-register {
+            margin-top: 0.5em;
+            color: #fff;
+
+            span, a {
+                color: $button-hover;
+                font-weight: 600;
+            }
+            a {
+                transition: opacity .3s;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .academy {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr;
+        gap: 1em;
+
+
+        &__title {
+            grid-column: 1 / span 2;
+            text-align: center;
+        }
+        &__carousel {
+            &-item {
+               
+                width: 450px;
+            }
+        }
+    }
+    .calendar {
+        &__category {
+            grid-template-columns: repeat(3,1fr);
+            &-heading {
+                grid-row: 1/2;
+                grid-column: 1 / span 3;
+            }
+        }
+        
+ 
+    }
+    .training {
+        padding: 8em 1em;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        &__name {
+            grid-column: 1/2;
+            align-self: end;
+            margin-top: 1em;
+            font-size: 2.8rem;
+        }
+        &__time {
+            grid-column: 1/2;
+            align-self: start;
+            font-size: 1.8rem;
+        }
+        &__content {
+            grid-column: 2/3;
+            grid-row: 1/ span 5;
+            padding: 1em;
+            height: 400px;
+        }
+        &__button {
+            align-self: start;
+            justify-self: start;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .academy {
+        column-gap: 2em;
+        &__title {
+            font-size: 3rem;
+        }
+        &__text {
+            font-size: 2.2rem;
+        }
+        &__image {
+            content: url('../../../dist/assets/images/academy/group-desktop.webp');
+        }
+    }
+    .training {
+        &__name {
+            max-width: 600px;
+            font-size: 3.4rem;
+        }
+        &__content {
+            height: 600px;
+        }
+    }
+    .calendar {
+        &__item {
+            &-info, &-register {
+                font-size: 2rem;
+            }
+        }
+    }
+}

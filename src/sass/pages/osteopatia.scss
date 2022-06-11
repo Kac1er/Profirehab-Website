@@ -1,0 +1,132 @@
+@import "../main";
+@import "../components/nav";
+@import "../components/innerHeader";
+@import "../components/footer";
+@import "../components/carousel";
+
+.osteopathy {
+	overflow: hidden;
+	padding-bottom: 3rem;
+	&__wrapp {
+		margin: 0 auto;
+		width: 95%;
+		max-width: 1300px;
+	}
+	&__title {
+		margin: 6rem 0 1rem;
+	}
+	.blob {
+		position: absolute;
+		bottom: 0;
+		left: -80px;
+		display: none;
+		width: 330px;
+		transform: translateY(100%);
+		z-index: 0;
+		opacity: 0.3;
+	}
+	&__box {
+		margin-bottom: 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	&__text-box {
+		max-width: 650px;
+	}
+	&__text {
+		position: relative;
+		margin-top: 1rem;
+		&:nth-of-type(1) {
+			margin-top: 0;
+		}
+	}
+	&__img-box {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		z-index: 1;
+		align-self: center;
+		&--last {
+			display: none;
+		}
+		.blob {
+			bottom: 2rem;
+			left: 50%;
+			transform: translateY(100%);
+			z-index: -1;
+		}
+	}
+	&__img {
+		width: 100%;
+		object-fit: cover;
+		box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+	}
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	&__list-item {
+		position: relative;
+		padding: 0 2em;
+		&::before {
+			content: url("../../../dist/assets/icons/checkmark.svg");
+			position: absolute;
+			left: 0;
+			top: 7px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.osteopathy {
+		.blob {
+			display: block;
+		}
+		&__box {
+			flex-direction: row;
+			gap: 4rem;
+			margin-top: 10rem;
+			justify-content: space-between;
+			&:nth-of-type(1) {
+				margin-top: 0;
+			}
+			&:nth-of-type(even) {
+				flex-direction: row-reverse;
+			}
+		}
+		&__text-box {
+			width: 50%;
+		}
+		&__text {
+			position: relative;
+			margin-top: 1rem;
+			&:nth-of-type(1) {
+				margin-top: 0;
+			}
+		}
+		&__img-box {
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			width: 45%;
+			z-index: 1;
+			align-self: flex-start;
+			&--last {
+				display: block;
+			}
+		}
+	}
+	.carousel {
+		margin-top: 10rem;
+		&__item-box-mobile {
+			display: none;
+		}
+	}
+}
+@media (min-width: 1250px) {
+	.carousel {
+		margin-top: 14rem;
+	}
+}

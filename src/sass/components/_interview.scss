@@ -1,0 +1,56 @@
+.interview-modal {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	height: 100%;
+
+	transform: translate(-50%, -50%);
+	z-index: 101;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	iframe {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 95%;
+	}
+
+	&-active {
+		display: block;
+	}
+    &-button{
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        z-index: 101;
+    }
+}
+
+@media (min-width: 768px) {
+	.interview-modal {
+		iframe {
+			max-width: 760px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.interview-modal {
+		iframe {
+			max-width: 1000px;
+			height: 600px;
+		}
+	}
+}

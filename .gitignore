@@ -1,0 +1,6 @@
+node_modules
+dist
+src/assets/video/hero-video.mp4
+todo.txt
+.htaccess
+.htaccess.bak

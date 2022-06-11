@@ -1,0 +1,145 @@
+@import "../main";
+@import '../components/innerHeader';
+@import "../components/footer";
+
+.wrapper {
+	max-width: 1000px;
+}
+
+
+.about {
+    position: relative;
+	&__container {
+		display: grid;
+		gap: 2em;
+		padding: 5em 0.5em;
+	}
+	&__text {
+		line-height: 1.7em;
+	}
+	&__image {
+		z-index: 1;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	}
+    &__background {
+        position: absolute;
+       opacity: 0.3;
+        width: 200px;
+
+        &--one {
+            top: 400px;
+            right: 20px;
+        }
+        &--two {
+            bottom: 400px;
+            left: 40px;
+        }
+    }
+}
+
+.graduation {
+	&__list {
+		list-style: none;
+		&-item {
+			position: relative;
+			padding: 0.3em 0;
+			&::before {
+				content: url("../../../dist/assets/icons/checkmark.svg");
+				position: absolute;
+				left: -30px;
+				top: 7px;
+			}
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.about {
+		&__image {
+			justify-self: center;
+			max-width: 350px;
+		}
+		&__text {
+			text-align: center;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.about {
+		&__container {
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 4em;
+		}
+		&__graduations {
+			grid-column: span 2;
+		}
+		&__carousel {
+			grid-column: span 2;
+
+			&-item {
+				width: 250px;
+				margin: 0 0.5em;
+			}
+		}
+		&__image {
+			grid-column: 1/2;
+			&--middle {
+				grid-column: 2/3;
+				grid-row: span 2;
+			}
+		}
+        &__background {
+
+           
+            width: 250px;
+    
+            &--one {
+                top: 100px;
+                right: 20px;
+            }
+            &--two {
+                width: 350px;
+                bottom: 600px;
+                left: 40px;
+            }
+        }
+	}
+}
+
+@media (min-width: 1024px) {
+	.about {
+		&__image {
+			max-width: 450px;
+		}
+		&__text {
+			text-align: left;
+		}
+		&__carousel {
+			&-item {
+				width: 330px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.about {
+		&__image {
+			max-width: 500px;
+		}
+        &__background {
+           
+            width: 300px;
+    
+            &--one {
+                top: 100px;
+                right: 200px;
+            }
+            &--two {
+                bottom: 500px;
+                left: 200px;
+            }
+        }
+	}
+}

@@ -1,0 +1,70 @@
+.reviews {
+    padding: 4em 0 10em 0;
+   
+    background-color: #000;
+    .flickity-page-dots {
+        bottom: -50px;
+    }
+    .flickity-page-dots .dot {
+        
+        background: $highlight-color;
+    }
+    &__heading,&__heading-desc {
+        text-align: center;
+        color: #fff;
+    }
+    &__heading {
+        @include sectionHeading;
+
+        &-decoration {
+            background-color: $highlight-color;
+
+            &::before, &::after {
+                background-color: $highlight-color;
+            }
+        }
+        &-desc {
+            text-align: center;
+            margin-top: 2em;
+        }
+    }
+    &__container {
+        margin-top: 4em;
+    }
+    &__review {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0.5em;
+        text-align: center;
+    }
+}
+
+.review {
+    &__date, &__text {
+        color: #fff;
+    }
+    &__text {
+        line-height: 1.8em;
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+    .reviews {
+        &__review {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .review {
+        &__text {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import "../main";
+@import "../components/nav";
+@import "../components/innerHeader";
+@import "../components/footer";
+@import "../components/carousel";
+
+.bolder {
+	font-weight: 600;
+}
+.special-word {
+	display: block;
+}
+.training {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 1300px;
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2rem;
+		margin-top: 3rem;
+		&:nth-of-type(1) {
+			margin-top: 1rem;
+		}
+	}
+	&__title {
+		margin-top: 6rem;
+		font-size: 2.2rem;
+	}
+	&__text {
+		margin-top: 1rem;
+	}
+	&__img-box {
+		position: relative;
+		align-self: center;
+	}
+	&__img {
+		width: 100%;
+		max-width: 600px;
+		object-fit: cover;
+		box-shadow: 0 7px 29px 0 hsl(240deg 5% 41% / 20%);
+		&--second {
+			display: none;
+		}
+	}
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__list-item {
+		position: relative;
+		padding: 0 2em;
+		&::before {
+			content: url("../../../dist/assets/icons/checkmark.svg");
+			position: absolute;
+			left: 0;
+			top: 7px;
+		}
+	}
+	.carousel {
+		margin-top: 4rem;
+	}
+	.blob {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.training {
+		&__box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&__text-box {
+			position: relative;
+			max-width: 650px;
+			align-self: flex-start;
+		}
+
+		&__img {
+			width: 100%;
+		}
+		.blob {
+			position: absolute;
+			bottom: -5rem;
+			left: -80px;
+			display: block;
+			width: 330px;
+			transform: translateY(100%);
+		}
+	}
+}
+@media (min-width: 992px) {
+	// .header {
+	// 	height: 80vh;
+	// }
+	.training {
+		&__text-box {
+			max-width: 650px;
+			align-self: flex-start;
+		}
+
+		&__img-box {
+			align-self: flex-end;
+		}
+	}
+}

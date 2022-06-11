@@ -1,0 +1,162 @@
+@import "../main";
+@import '../components/innerHeader';
+@import "../components/footer";
+
+
+.header {
+    background-position: center;
+}
+
+.wrapper {
+    max-width: 500px;
+}
+
+.about {
+    padding: 5em 0;
+    &__heading {
+        @include sectionHeading;
+    }
+    &__container {
+        margin-top: 8em;
+        padding: 0 0.5em;
+    }
+
+}
+.step {
+    display: grid;
+    gap: 2em;
+    margin-top: 4em;
+    &__heading {
+        position: relative;
+        margin-bottom: 1em;
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-align: center;
+
+        &::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            font-size: 10rem;
+            font-weight: 900;
+            color: $primary-color;
+            transform: translate(-50%, 0) scale(2,1.5);
+            z-index: -1;
+            opacity: 0.4;
+        }
+    }
+    &__text {
+
+        line-height: 1.8em;
+    }
+    &__image {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+}
+
+.summary {
+    padding: 0 0.5em;
+
+    &__text {
+        margin-top: 1.5em;
+        line-height: 1.8em;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 1400px;
+    }
+    .about {
+        &__container {
+            padding: 0 1em;
+        }
+    }
+    .step {
+        margin-top: 5em;
+        justify-self: center;
+        grid-template-columns: repeat(2,1fr);
+
+        &__heading {
+            margin-top: 1em;
+            text-align: left;
+            align-self: end;
+            &::before {
+                left: 20px;
+                transform: scale(2,1.5);
+            }
+        }
+        &__image {
+            grid-row: 1/ span 2;
+        }
+        &--one, &--three {
+            img {
+                grid-column: 2/3;
+            }
+            p {
+                grid-column: 1/2;
+            }
+        }
+        &--two {
+            img {
+                grid-column: 1/2;
+      
+            }
+            p {
+                grid-column: 2/3;
+            }
+        }
+    }
+    .summary {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .step {
+ 
+        img {
+            max-width: 500px;
+        }
+        &__text {
+            max-width: 600px;
+        }
+        &--one {
+            img {
+                content: url('../../../dist/assets/images/home/office-1-desktop.webp');
+            }
+        }
+        &--two {
+            img {
+                content: url('../../../dist/assets/images/appointment/step-2-desktop.webp');
+            }
+        }
+        &--three {
+            img {
+                content: url('../../../dist/assets/images/appointment/step-3-desktop.webp');
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .step {
+        margin-top: 10em;
+        justify-content: center;
+        grid-template-columns: repeat(2,600px );
+        &--one, &--three {
+
+            img {
+                justify-self: end;
+            }
+        }
+        &--three {
+            grid-template-rows: repeat(3,200px);
+        }
+    }
+    .summary {
+        margin-top: 4em;
+        max-width: 1000px;
+    }
+}

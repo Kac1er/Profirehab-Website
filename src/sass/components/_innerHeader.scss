@@ -1,0 +1,169 @@
+@import "../components/nav";
+:root {
+	--bg-image-mobile: "";
+	--bg-image-desktop: "";
+}
+.special-word {
+	color: $primary-color;
+	background-image: url();
+}
+.special-title {
+	@include underlineDecoration;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	position: relative;
+	height: 100vh;
+	padding: 0 0.5em;
+	background-image: var(--bg-image-mobile);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 0;
+	&::before {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	&::after {
+		background-color: #000;
+		animation: hideHeaderCurtain 1s 1.5s forwards;
+	}
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	&__heading,
+	&__text {
+		text-align: center;
+		animation: opacityShow 1s 1s forwards;
+		opacity: 0;
+	}
+	&__logo {
+		width: 300px;
+	}
+	&__heading {
+		color: #fff;
+		font-size: 3.4rem;
+	}
+	&__text {
+		color: $gray-text;
+		font-size: 1.8rem;
+	}
+	&__skip-arrow {
+		padding-top: 0.5em;
+		border: 0;
+		background-color: transparent;
+		transform: scale(1.5);
+		animation: skipArrowSlide 2.5s ease-in-out alternate infinite,
+			opacityShow 2s 0.8s forwards;
+		cursor: pointer;
+		opacity: 0;
+	}
+}
+.wave-mobile {
+	.custom-shape-divider-bottom-1640707076 {
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+
+	.custom-shape-divider-bottom-1640707076 svg {
+		position: relative;
+		display: block;
+		width: calc(240% + 1.3px);
+		height: 63px;
+	}
+
+	.custom-shape-divider-bottom-1640707076 .shape-fill {
+		fill: #ffffff;
+	}
+}
+.custom-shape-divider-bottom-1640620444 {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+	opacity: 0;
+	animation: opacityShow 2s 0.8s forwards;
+}
+
+.custom-shape-divider-bottom-1640620444 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 150px;
+	transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1640620444 .shape-fill {
+	fill: #ffffff;
+}
+@media (min-width: 768px) {
+	.header {
+		&__heading {
+			font-size: 6rem;
+		}
+		&__text {
+			font-size: 2rem;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	.header {
+		background-image: var(--bg-image-desktop);
+		background-position: center top;
+
+		&__logo {
+			width: 500px;
+		}
+	}
+}
+
+@keyframes skipArrowSlide {
+	from {
+		transform: translateY(0) scale(1.5);
+	}
+	to {
+		transform: translateY(20px) scale(1.5);
+	}
+}
+@keyframes opacityShow {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes hideHeaderCurtain {
+	90% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.custom-shape-divider-bottom-1640620444 {
+		display: block;
+	}
+	.wave-mobile {
+		display: none;
+	}
+}

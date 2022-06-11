@@ -1,0 +1,280 @@
+.owner {
+	position: relative;
+	padding: 5em 1em;
+	overflow-x: hidden;
+	&__heading {
+		@include sectionHeading;
+	}
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 3em;
+	}
+	&__top-side {
+		display: grid;
+		margin-top: 5em;
+	}
+	&__bot-side {
+		display: flex;
+		flex-direction: column;
+	}
+	&__name {
+		font-size: 3.2rem;
+		font-weight: 600;
+		margin-bottom: 0.3em;
+
+		&--highlighted {
+			@include underlineDecoration;
+		}
+	}
+	&__titles {
+		color: $gray-high-contrast;
+	}
+	&__image,
+	&__text {
+		margin-top: 2em;
+	}
+	&__text {
+		line-height: 1.7em;
+	}
+	&__shadow-text {
+		color: $gray-text;
+		font-size: 6rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 0.1em;
+		opacity: 0.3;
+	}
+	&__double-image {
+		max-width: 320px;
+	}
+	&__list {
+		list-style: none;
+		&-item {
+			position: relative;
+			padding: 0.3em 0;
+			&::before {
+				content: url("https://profirehab-cdn.netlify.app/assets/icons/checkmark.svg");
+				position: absolute;
+				left: -30px;
+				top: 9px;
+			}
+		}
+	}
+	&__interview {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		padding: 1em;
+		min-height: 400px;
+		background-image: url("https://profirehab-cdn.netlify.app/assets/images/home/owner-interview-mobile.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 50px;
+		z-index: 0;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: -1;
+		}
+		&-button-play {
+			margin: auto 0;
+			background-color: transparent;
+			border: 0;
+			cursor: pointer;
+			transform: scale(0.8);
+			transition: opacity 0.3s;
+
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+		&-overtext,
+		&-desc {
+			align-self: flex-start;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		&-overtext {
+			font-size: 1.4rem;
+			font-weight: 300;
+		}
+		&-desc {
+			font-weight: 800;
+		}
+	}
+	&__blob {
+		position: absolute;
+		opacity: 0.2;
+		width: 250px;
+		&--one {
+			right: -150px;
+			top: 900px;
+		}
+		&--two {
+			bottom: 900px;
+			left: -50px;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.owner {
+		&__blob {
+			&--one {
+				top: 1200px;
+			}
+		}
+		&__double-image {
+			align-self: start;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.owner {
+		&__container {
+			gap: 1em;
+		}
+		&__top-side {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 50px);
+
+			column-gap: 2em;
+		}
+		&__bot-side {
+			flex-direction: row-reverse;
+			justify-content: space-evenly;
+			gap: 3em;
+		}
+		&__double-image {
+			max-width: 360px;
+		}
+		&__name,
+		&__titles,
+		&__text {
+			grid-column: 2/3;
+		}
+		&__text {
+			margin-top: 1em;
+		}
+
+		&__image {
+			align-self: start;
+
+			grid-column: 1/2;
+			grid-row: 1/2;
+			margin-top: 0;
+			width: 400px;
+		}
+		&__shadow-text {
+			font-size: 13rem;
+		}
+		&__interview {
+			margin-top: 5em;
+			background-position: center top;
+			&-overtext {
+				font-size: 1.8rem;
+			}
+			&-desc {
+				font-size: 2.6rem;
+			}
+		}
+		&__blob {
+			width: 350px;
+			&--one {
+				top: 400px;
+			}
+			&--two {
+				bottom: 500px;
+				left: -100px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.owner {
+		&__top-side {
+			grid-template-rows: 70px 50px;
+			column-gap: 1em;
+		}
+		&__name {
+			font-size: 4rem;
+		}
+		&__image {
+			width: 450px;
+		}
+		&__interview {
+			min-height: 700px;
+			background-image: url("https://profirehab-cdn.netlify.app/assets/images/home/owner-interview-fhd.webp");
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.owner {
+		&__top-side {
+			grid-template-rows: 80px 50px;
+			grid-template-columns: 600px 600px;
+			justify-content: space-evenly;
+		}
+		&__text {
+			width: 600px;
+			font-size: 1.8rem;
+		}
+		&__name {
+			font-size: 4.6rem;
+		}
+		&__image {
+			width: 570px;
+		}
+		&__shadow-text {
+			margin-top: 1em;
+			font-size: 16rem;
+			letter-spacing: 0.3em;
+		}
+		&__double-image {
+			margin-top: 0;
+			max-width: 500px;
+			content: url("https://profirehab-cdn.netlify.app/assets/images/home/owner-double-desktop.webp");
+		}
+		&__image {
+			content: url("https://profirehab-cdn.netlify.app/assets/images/home/owner-desktop.webp");
+		}
+		&__bot-side {
+			gap: 1em;
+		}
+		&__blob {
+			&--one {
+				right: -30px;
+			}
+			&--two {
+				bottom: 700px;
+				left: 10px;
+			}
+		}
+		&__interview {
+			padding: 2em;
+		}
+	}
+}
+
+@media (min-width: 1500px) {
+	.owner {
+		&__double-image {
+			max-width: 600px;
+		}
+	}
+}

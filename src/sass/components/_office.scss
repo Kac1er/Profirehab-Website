@@ -1,0 +1,187 @@
+.office {
+	position: relative;
+	padding: 5em 0;
+	overflow-x: hidden;
+	&__heading {
+		@include sectionHeading;
+	}
+	&__container {
+		position: relative;
+	}
+	&__group-image {
+		margin-top: 2em;
+		margin-inline: auto;
+		width: 95%;
+		z-index: 10;
+		
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1em;
+		position: relative;
+		margin-top: 3em;
+		padding: 0 1em;
+
+		&-side {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+		}
+		&-text {
+			line-height: 1.7em;
+		}
+
+		&-list {
+			list-style: none;
+			&-item {
+				position: relative;
+				padding: 0.3em 0;
+				&::before {
+					content: url("https://profirehab-cdn.netlify.app/assets/icons/checkmark.svg");
+					position: absolute;
+					left: -30px;
+					top: 7px;
+				}
+			}
+		}
+	}
+	&__blob {
+		position: absolute;
+		opacity: 0.2;
+		max-width: 300px;
+		z-index: -1;
+		&-one {
+			right: -200px;
+			top: 200px;
+		}
+		&-two {
+			left: -140px;
+			top: 900px;
+		}
+		&-three {
+			top: 1400px;
+			right: -200px;
+		}
+		&-four {
+			bottom: 700px;
+			left: -200px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.office {
+		&__block {
+			margin-top: 8em;
+
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-start;
+
+			&--reverse {
+				flex-direction: row-reverse;
+
+				.office__block-picture {
+					margin-top: 0;
+					&::before {
+						top: 15px;
+						left: 15px;
+					}
+				}
+			}
+
+			&-image {
+				display: block;
+				position: relative;
+				width: 350px;
+				object-fit: cover;
+			}
+			&-picture {
+				position: relative;
+
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+					rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+			}
+			&-text,
+			&-list {
+				width: 350px;
+			}
+		}
+		&__blob {
+			&-one {
+				right: 0;
+				top: 100px;
+			}
+			&-two {
+				left: 0;
+				top: 600px;
+			}
+			&-three {
+				top: 1400px;
+				right: 50px;
+			}
+			&-four {
+				bottom: 100px;
+				left: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.office {
+		&__blob {
+			&-two {
+				left: 40px;
+			}
+		}
+		&__block {
+			justify-content: space-around;
+			&-image {
+				width: 400px;
+			}
+			&-text {
+				width: 450px;
+			}
+		}
+		&__group-image {
+			width: 1000px;
+			content: url('../../../dist/assets/images/academy/hero-desktop.webp');
+		}
+	}
+}
+
+@media (min-width: 1300px) {
+	.office {
+		&__block {
+			gap: 5em;
+			&-image {
+				width: 700px;
+				height: 470px;
+
+				&--one {
+					content: url("https://profirehab-cdn.netlify.app/assets/images/home/office-1-desktop.webp");
+				}
+				&--two {
+					content: url("https://profirehab-cdn.netlify.app/assets/images/home/office-2-desktop.webp");
+				}
+				&--three {
+					content: url("https://profirehab-cdn.netlify.app/assets/images/home/office-3-desktop.webp");
+				}
+				&--four {
+					content: url("https://profirehab-cdn.netlify.app/assets/images/home/office-4-desktop.webp");
+				}
+			}
+			&-text {
+				width: 500px;
+			}
+		}
+		&__group-image {
+			width: 1200px;
+			content: url('../../../dist/assets/images/academy/hero-desktop.webp');
+		}
+	}
+}

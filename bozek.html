@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+	rel="icon"
+	type="image/png"
+	sizes="32x32"
+	href="../dist/assets/icons/favicon-32x32.webp"
+/>
+<link
+	rel="icon"
+	type="image/png"
+	sizes="16x16"
+	href="../dist/assets/icons/favicon-16x16.webp"
+/>
+<link
+	rel="stylesheet"
+	href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+/>
+<link rel="apple-touch-icon" href="../dist/assets/icons/apple-touch-icon.webp" />
+<link rel="apple-touch-icon" sizes="57x57" href="../dist/assets/icons/apple-touch-icon-57x57.webp" />
+<link rel="apple-touch-icon" sizes="72x72" href="../dist/assets/icons/apple-touch-icon-72x72.webp" />
+<link rel="apple-touch-icon" sizes="76x76" href="../dist/assets/icons/apple-touch-icon-76x76.webp" />
+<link
+	rel="apple-touch-icon"
+	sizes="114x114"
+	href="../dist/assets/icons/apple-touch-icon-114x114.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="120x120"
+	href="../dist/assets/icons/apple-touch-icon-120x120.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="144x144"
+	href="../dist/assets/icons/apple-touch-icon-144x144.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="152x152"
+	href="../dist/assets/icons/apple-touch-icon-152x152.webp"
+/>
+<link
+	rel="apple-touch-icon"
+	sizes="180x180"
+	href="../dist/assets/icons/apple-touch-icon-180x180.webp"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap"
+	rel="stylesheet"
+/>
+
+		<title>Profirehab | Maciej Bożek, członek zespołu Profirehab</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
+		<link rel="stylesheet" href="../dist/css/pages/teamMember.min.css" />
+	</head>
+	<body>
+		<a href="#main-content" class="skip-link" aria-label="Przejdź do sekcji głównej pomijając nawigację">Sekcja główna</a>
+		<nav class="nav">
+	<div class="nav__contanct-list">
+		<div class="wrapp">
+			<a href="tel:881064340" class="contact-link">
+				<img
+					src="https://profirehab-cdn.netlify.app/assets/icons/phone-icon-nav.svg"
+					alt="Ikona telefonu, kontakt telefoniczny z gabinetem profirehab"
+					class="icon-contact"
+				/>
+				881 064 340</a
+			>
+			<a href="mailto:biuro.profirehab@gmail.com" class="contact-link">
+				<img
+					src="https://profirehab-cdn.netlify.app/assets/icons/mail-icon-nav.svg"
+					alt="Ikona maila, kontakt mailowy z biurem profirehab"
+					class="icon-contact"
+				/>
+				biuro.profirehab@gmail.com</a
+			>
+		</div>
+	</div>
+	<div class="nav__components">
+		<div class="wrapp">
+			<div class="ham-btn-box">
+				<button
+					aria-haspopup="true"
+					aria-label="otwórz menu"
+					class="ham-btn"
+					data-aos="zoom-in"
+					data-aos-delay="500"
+				>
+					<img src="https://profirehab-cdn.netlify.app/assets/icons/menu.svg" class="icon" alt="" />
+					<span class="btn-name">menu</span>
+				</button>
+			</div>
+			<a
+				href="index.html"
+				class="logo-link"
+				data-aos="zoom-in"
+				data-aos-delay="200"
+				><img
+					src="https://profirehab-cdn.netlify.app/assets/icons/logo_color.webp"
+					class="logo"
+					alt="logo firmy Profirehab"
+			/></a>
+			<div
+				class="nav-social-media"
+				data-aos="zoom-in"
+				data-aos-delay="500"
+				data-aos-easing="ease-in-out"
+			>
+				<a
+					aria-label="Fanpage gabinetu Profirehab na instagramie"
+					href="https://www.instagram.com/profirehab/"
+					rel="noopener"
+					class="social-media-item"
+					target="_blank"
+					><img src="https://profirehab-cdn.netlify.app/assets/icons/instagram.svg" alt="" class="icon"
+				/></a>
+				<a
+					href="https://www.facebook.com/profirehab/"
+					rel="noopener"
+					aria-label="Fanpage gabinetu Profirehab na facebooku"
+					class="social-media-item"
+					target="_blank"
+					><img src="https://profirehab-cdn.netlify.app/assets/icons/facebook.svg" alt="" class="icon"
+				/></a>
+				<a
+					href="https://www.youtube.com/channel/UCY6KrQ-mW2kccU6r7XnCaXg"
+					rel="noopener"
+					aria-label="Kanał youtube gabinetu Profirehab"
+					class="social-media-item"
+					target="_blank"
+					><img src="https://profirehab-cdn.netlify.app/assets/icons/youtube.svg" alt="" class="icon"
+				/></a>
+			</div>
+		</div>
+	</div>
+	<div class="nav__menu">
+		<div class="box">
+			<p class="company-name"><span class="color-text">PROFI</span>REHAB</p>
+			<button aria-expanded="true" aria-label="zamknij menu" class="close-btn">
+				<img src="./dist/assets/icons/close.svg" class="icon" alt="" />
+			</button>
+		</div>
+		<a href="../index.html" class="menu-item menu-item-first">Strona główna </a>
+		<a href="../osteopathy.html" class="menu-item">Osteopatia</a>
+		<a href="../motoric-training.html" class="menu-item"
+			>Trening motoryczny/medyczny
+		</a>
+		<a href="../treatments.html" class="menu-item">Zabiegi</a>
+		<a href="../trainings.html" class="menu-item">Szkolenia profirehab academy</a>
+		<a href="../treatments.html" class="menu-item">Oferta</a>
+		<a href="../gallery.html" class="menu-item">Galeria</a>
+		<a href="../appointment.html" class="menu-item special-link"
+			>Pierwsza wizyta
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="white"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-arrow-right arrow"
+			>
+				<line x1="5" y1="12" x2="19" y2="12"></line>
+				<polyline points="12 5 19 12 12 19"></polyline>
+			</svg>
+		</a>
+	</div>
+	<div class="nav__shadow"></div>
+</nav>
+
+		<header
+			class="header"
+			style="
+				--bg-image-mobile: url('../../../dist/assets/images/members/bozek-mobile.webp');
+				--bg-image-desktop: url('../../../dist/assets/images/members/bozek-desktop.webp');
+			"
+		>
+			<h1 class="header__heading">Maciej Bożek</h1>
+			<p class="header__text">Lider zespołu Profirehab, Fizjoterapeuta</p>
+			<a
+				href="#about"
+				class="header__skip-arrow"
+				type="button"
+				aria-label="Przewiń niżej"
+			>
+				<img src="../dist/assets/icons/arrow-down.svg" alt="" />
+			</a>
+			<div class="custom-shape-divider-bottom-1640620444">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+				>
+					<path
+						d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+						opacity=".25"
+						class="shape-fill"
+					></path>
+					<path
+						d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+						opacity=".5"
+						class="shape-fill"
+					></path>
+					<path
+						d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+						class="shape-fill"
+					></path>
+				</svg>
+			</div>
+		</header>
+		<main id="main-content">
+			<section class="about" id="about">
+				<article class="about__container wrapper">
+					<img
+						src=""
+						data-src="../dist/assets/images/home/tynk-1.webp"
+						class="about__background about__background--one lazy-load-image"
+						alt=""
+					/>
+					<img
+						src=""
+						data-src="../dist/assets/images/home/tynk-3.webp"
+						class="about__background about__background--two lazy-load-image"
+						alt=""
+					/>
+					<img
+						src=""
+						data-src="../dist/assets/images/members/bozek-top-mobile.webp"
+						alt="Fizjoterapeuta Maciej Bożek w czarnej koszulce marki Profirehab z uniesionymi rękoma stojący przodem do odbiorcy"
+						class="about__image lazy-load-image"
+					/>
+					<p class="about__text">
+						Absolwent studiów licencjackich oraz magisterskich na Akademii
+						Wychowania Fizycznego im. Bronisława Czecha w Krakowie, kierunek:
+						Fizjoterapia. Poprzednio pracował jako fizjoterapeuta Wisły Kraków.
+					</p>
+					<p class="about__text">
+						Od najmłodszych lat związany ze sportem. W swojej pracy wykorzystuje
+						kompleksową wiedzę z zakresu przygotowania sportowego, efektywnej
+						rehabilitacji oraz regeneracji organizmu po wysiłku fizycznym co
+						pozwala mu spojrzeć holistycznie na każdego pacjenta. Trener
+						przygotowania motorycznego w Akademii Piłkarskiej Beniaminek Krosno.
+						Aktywny uczestnik wielu kursów i szkoleń z dziedziny fizjoterapii.
+					</p>
+					<img
+						src=""
+						data-src="../dist/assets/images/members/bozek-middle-mobile.webp"
+						alt="Maciej Bożek w trakcie zabiegu wraz ze swoim pacjentem, Maciej patrzy w stronę odbiorcy natomiast pacjent leży nieruchomo"
+						class="about__image about__image--middle lazy-load-image"
+					/>
+
+					<div class="about__graduations">
+						<p class="graduation__heading">Ukończone kursy i szkolenia:</p>
+						<ul class="graduation__list">
+							<li class="graduation__list-item">
+								FDM (Fascial Distortion Model) – Terapia Manualna wg Typaldosa
+								D.O. Moduł I, II, III
+							</li>
+							<li class="graduation__list-item">
+								Kompleksowa fizjoterapia sportowca w fazie ostrej
+							</li>
+							<li class="graduation__list-item">
+								Terapia Manualna wg Briana Mulligana cz. A/I stopień, cz. B/II
+								stopień
+							</li>
+							<li class="graduation__list-item">
+								Kinetic Running – prewencja urazów w treningu biegowym
+							</li>
+							<li class="graduation__list-item">
+								Rehabilitacja sportowa (Polski Instytut Fizjoterapii i Sportu)
+							</li>
+							<li class="graduation__list-item">
+								Terapia wisceralna w praktyce fizjoterapeuty
+							</li>
+							<li class="graduation__list-item">Osteopatyczna Terapia Blizn</li>
+							<li class="graduation__list-item">
+								Współczesne metody diagnostyki i leczenia tkanek miękkich – dr.
+								J. Ciechomski D.O.
+							</li>
+							<li class="graduation__list-item">
+								Najnowsze trendy i metody w procesie przygotowania motorycznego
+							</li>
+							<li class="graduation__list-item">Masaż tkanek głębokich</li>
+							<li class="graduation__list-item">
+								Taping Rehabilitacyjno-Sportowy
+							</li>
+							<li class="graduation__list-item">Kompleksowa Terapia Powięzi</li>
+						</ul>
+					</div>
+					<div class="about__carousel">
+						<img
+							src="../dist/assets/images/members/bozek-1.webp"
+							alt=""
+							class="about__carousel-item"
+						/>
+						<img
+							src="../dist/assets/images/members/bozek-2.webp"
+							alt=""
+							class="about__carousel-item"
+						/>
+						<img
+							src="../dist/assets/images/members/bozek-3.webp"
+							alt=""
+							class="about__carousel-item"
+						/>
+						<img
+							src="../dist/assets/images/members/bozek-4.webp"
+							alt=""
+							class="about__carousel-item"
+						/>
+						<img
+							src="../dist/assets/images/members/bozek-5.webp"
+							alt=""
+							class="about__carousel-item"
+						/>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer class="footer" id="footer">
+	<div class="wrapp">
+		<div class="about-company">
+			<div class="about-company__text-wrapp">
+				<div class="about-company__text">
+					<h3 class="section-title">O nas</h3>
+					<p class="footer-name">Profirehab</p>
+					<p class="footer-text">
+						Misją Profirehab jest odkrycie przyczyn dolegliwości oraz
+						zastosowanie indywidualnego programu leczenia, podczas którego
+						Pacjent w świadomy sposób uczestniczy w procesie terapeutycznym.
+					</p>
+				</div>
+				<div class="about-company__social-media">
+					<a
+						href="https://www.instagram.com/profirehab/"
+						rel="noopener"
+						target="_blank"
+						aria-label="Fanpage gabinetu Profirehab na instagramie"
+						class="social-media-item"
+					>
+						<img
+							src=""
+							data-src="https://profirehab-cdn.netlify.app/assets/icons/instagram.svg"
+							alt=""
+							class="icon lazy-load-image"
+						/>
+					</a>
+					<a
+						href="https://www.facebook.com/profirehab/"
+						rel="noopener"
+						target="_blank"
+						aria-label="Fanpage gabinetu Profirehab na facebooku"
+						class="social-media-item"
+					>
+						<img
+							src=""
+							data-src="https://profirehab-cdn.netlify.app/assets/icons/facebook.svg"
+							alt=""
+							class="icon lazy-load-image"
+						/>
+					</a>
+					<a
+						href="https://www.youtube.com/channel/UCY6KrQ-mW2kccU6r7XnCaXg"
+						rel="noopener"
+						target="_blank"
+						aria-label="Kanał youtube gabinetu profirehab"
+						class="social-media-item"
+					>
+						<img
+							src=""
+							data-src="https://profirehab-cdn.netlify.app/assets/icons/youtube.svg"
+							alt=""
+							class="icon lazy-load-image"
+						/>
+					</a>
+				</div>
+			</div>
+			<div class="about-company__info-wrapp">
+				<h3 class="section-title">Kontakt</h3>
+				<div class="wrapper">
+					<div class="about-company__info">
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/phone-icon-footer.svg"
+									alt="Ikona telefonu, kontakt telefoniczny z biurem profirehab"
+									class="icon lazy-load-image"
+								/>
+								Telefon
+							</p>
+							<p class="footer-text"><a href="tel:881064340">881 064 340</a></p>
+						</div>
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/mail-icon-footer.svg"
+									alt="Ikona listu, kontakt mailowy z biurem profirehab"
+									class="icon lazy-load-image"
+								/>
+								Poczta
+							</p>
+							<p class="footer-text"><a href="mailto:biuro.profirehab@gmail.com">biuro.profirehab@gmail.com</a></p>
+							<span aria-hidden="true" class="footer-text hidden">a</span>
+						</div>
+					</div>
+					<div class="about-company__info">
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/clock.svg"
+									alt="Ikona zegara, godziny otwarcia gabinetu profirehab"
+									class="icon lazy-load-image"
+								/>
+								Godziny Otwarcia
+							</p>
+							<p class="footer-text">Od poniedziałku do piątku</p>
+							<p class="footer-text">w godz. 8:00 - 20:00</p>
+						</div>
+						<div class="box">
+							<p class="footer-name footer-name-info">
+								<img
+									src=""
+									data-src="https://profirehab-cdn.netlify.app/assets/icons/map-pin.svg"
+									alt="Ikona lokalizacji, adres gabinetu profirehab"
+									class="icon lazy-load-image"
+								/>
+								Adres
+							</p>
+							<p class="footer-text"><a href="https://g.page/ProfiRehab?share" rel="noopener noreferrer" target="_blank">ul. Krakowska 116</a></p>
+							<p class="footer-text"><a href="https://g.page/ProfiRehab?share" rel="noopener noreferrer" target="_blank">38-400 Krosno</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__links">
+			<h3 class="section-title">Nasze usługi</h3>
+			<div class="footer__links-wrapp">
+				<a href="../appointment.html" class="footer-link">pierwsza wizyta</a>
+				<a href="../treatments.html" class="footer-link">zabiegi</a>
+				<a href="../osteopathy.html" class="footer-link">Osteopatia</a>
+				<a href="../gallery.html" class="footer-link">Galeria</a>
+				<a href="../trainings.html" class="footer-link">szkolenia</a>
+				<a href="../motoric-training.html" class="footer-link"
+					>trening motoryczny/medyczny</a
+				>
+			</div>
+		</div>
+		<div class="copyRight">
+			<p class="copyRight__text">
+				&copy; <span class="year">2022</span> - POWERED BY ANAPO
+			</p>
+		</div>
+	</div>
+	<img
+		src=""
+		data-src="https://profirehab-cdn.netlify.app/assets/icons/footer-dots-3.svg"
+		alt=""
+		class="footer__dotted footer__dotted--first lazy-load-image"
+	/>
+	<img
+		src=""
+		data-src="https://profirehab-cdn.netlify.app/assets/icons/footer-dots-2.svg"
+		alt=""
+		class="footer__dotted footer__dotted--second lazy-load-image"
+	/>
+	<img
+		src=""
+		data-src="https://profirehab-cdn.netlify.app/assets/icons/footer-dots-1.svg"
+		alt=""
+		class="footer__dotted footer__dotted--third lazy-load-image"
+	/>
+</footer>
+
+		<script src="../dist/js/main.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src="../dist/js/member.min.js"></script>
+	</body>
+</html>

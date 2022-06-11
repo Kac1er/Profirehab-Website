@@ -1,0 +1,110 @@
+@mixin buttonStyles($type) {
+	@include buttonAnimation();
+	position: relative;
+	min-width: 140px;
+	padding: 1em 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	z-index: 0;
+	@if $type == "primary" {
+		background-color: $primary-color;
+
+		&::before {
+			background-color: $button-hover;
+		}
+	} @else {
+		border: 1px solid #fff;
+
+		&::before {
+			background-color: #fff;
+		}
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+@mixin buttonAnimation {
+	position: relative;
+	z-index: 0;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0.5px;
+		height: 100%;
+		z-index: -1;
+		transform: scaleY(0);
+		transform-origin: bottom;
+		transition: transform 0.3s, color 0.3s 0.3s;
+	}
+	&:hover {
+		&::before {
+			transform: scaleY(1);
+		}
+	}
+}
+
+@mixin sectionHeading {
+	font-size: 2.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+	&-decoration {
+		position: relative;
+		display: block;
+		margin: 0.4em auto 0 auto;
+		width: 12px;
+		height: 12px;
+		background-color: $primary-color;
+		border-radius: 50%;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			background-color: $primary-color;
+			border-radius: 50%;
+		}
+		&::before {
+			left: -30px;
+		}
+		&::after {
+			left: 30px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		font-size: 3.6rem;
+	}
+}
+
+@mixin underlineDecoration {
+	position: relative;
+	display: inline-block;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+		width: 100%;
+		height: 12px;
+		background-color: $underline-decoration;
+	}
+}
+
+.bolder {
+	font-weight: 600;
+}
+@mixin opacityAnimation {
+	transition: 0.3s opacity;
+	&:hover {
+		opacity: 0.6;
+	}
+}
